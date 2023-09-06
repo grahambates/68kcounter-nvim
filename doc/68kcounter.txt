@@ -1,0 +1,32 @@
+*68kcounter.txt*  Motorola 68000 instruction cycle/byte counts
+
+Author:  Graham Bates <hello@grahambates.com>
+License: MIT
+
+==============================================================================
+Introduction                                                      *68kcounter*
+
+Analyses 68000 assembly source to profile resource and size data. For each 
+instruction it will tell you.
+
+- CPU cycles
+- Bus read cycles
+- Bus write cycles
+- Size in bytes
+
+==============================================================================
+Usage                                                       *68kcounter.usage*
+
+Your assembly files should be using the `asm68k` or `asm` filetype.
+
+Counts are displayed to the left of the current window.
+Once open, they will be live-updated as you edit or switch files.
+
+:CounterShow                                          *68kcounter.CounterShow*
+Show counts for current window/buffer
+
+:CounterHide                                          *68kcounter.CounterHide*
+Hide the counts window
+
+:CounterToggle                                      *68kcounter.CounterToggle*
+Toggle visibility of the counts window
