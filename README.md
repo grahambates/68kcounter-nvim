@@ -2,13 +2,15 @@
 
 Neovim plugin for [68kcounter](https://github.com/grahambates/68kcounter/)
 
-Analyses 68000 assembly source to profile resource and size data. For each 
-instruction it will tell you.
+Analyses 68000 assembly source to profile resource and size data. For each
+instruction it will tell you:
 
 - CPU cycles
 - Bus read cycles
 - Bus write cycles
 - Size in bytes
+
+![image](preview.png)
 
 ## Dependencies
 
@@ -25,11 +27,11 @@ The following options are available and set by default:
 ```lua
 -- Using packer
 use({
-    "grahambates/68kcounter.nvim",
+    "grahambates/68kcounter-nvim",
     config = function()
         require("68kcounter").setup({
            -- path to 68kcounter node cli tool (default assumes global path)
-           bin_path="68kcounter" 
+           bin_path="68kcounter"
         })
     end,
 })
