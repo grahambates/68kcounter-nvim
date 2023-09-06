@@ -221,6 +221,7 @@ function vis_buf_change()
   local new_bufnr = vim.fn.bufnr("%")
   -- new buffer in src window?
   if window_exists() and state.srcwin == vim.fn.win_getid() and new_bufnr ~= state.srcbuf then
+    state.srcbuf = new_bufnr
     init_buffer()
   end
 end
